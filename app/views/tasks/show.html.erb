@@ -1,5 +1,9 @@
 <h1><%= @task.title %></h1>
 
+<div class="button">
+  <p><%= link_to "Edit this task", edit_path(params[:id]) %></p>
+</div>
+
 <div class="container">
   <p><%= @task.details %></p>
 </div>

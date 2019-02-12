@@ -1,7 +1,7 @@
 <h1>My tasks</h1>
 
 <% @tasks.each do |task| %>
-<p>[<%= task.completed? ? "X" : " " %>] <%= link_to task.title, show_path(task) %> <%= link_to "Delete", delete_path(task),
+<p>[<%= task.completed? ? "X" : " " %>] <%= link_to task.title, task_path(task) %> <%= link_to "Delete", delete_path(task),
       method: :delete,
       data: { confirm: "Are you sure?" } %></p>
 <% end %>
